@@ -9,6 +9,17 @@ import org.testng.annotations.Parameters;
 import java.time.Duration;
 
 public class TestBaseCross {
+
+    /*
+       bu classi farkli browserlarda calistirmak istedigimiz crossBrowser package'i
+       altindaki classlara extends ile bagladik
+
+       ve sonrasinda bir Xml dosyasi olusturup crossBrowser icin <test> satirinin altina
+       browser icin parametre gonderiyoruz
+     */
+
+
+
     protected WebDriver driver;
 
     @Parameters ("browser")

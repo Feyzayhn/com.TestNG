@@ -39,7 +39,7 @@ public class C04_DependsOnMethods {
 
     @Test
     public void test1() {
-// AMAZON ANASAYFAYA GIDELIM
+//AMAZON ANASAYFAYA GIDELIM
         driver.get("https://amazon.com");
 
     }
@@ -49,6 +49,7 @@ public class C04_DependsOnMethods {
 //NUTELLA ARATALIM
         WebElement searchBox=driver.findElement(By.id("twotabsearchtextbox"));
         searchBox.sendKeys("Nutella" + Keys.ENTER);
+
     }
 
 

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="sequential Cross Browser Test">
+    <test name="grid test">
+        <classes>
+            <class name="tests.SeleniumGrid01"/>
+            <class name="tests.SeleniumGrid02"/>
+        </classes>
+    </test>
+</suite>

@@ -10,6 +10,10 @@ import utilities.TestBaseCross;
 
 public class C01_AssertionsCross extends TestBaseCross {
 
+    //Farkli browser’lar ile calistirmak istedigimiz class’lari bir package altina toplayalim
+    //crossBrowser ve class’lari TestBaseCross clasina extends ile child olarak tanimlayalim
+
+
     @Test
     public void test01() {
 

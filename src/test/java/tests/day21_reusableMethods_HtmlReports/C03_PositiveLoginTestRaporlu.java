@@ -26,7 +26,7 @@ public class C03_PositiveLoginTestRaporlu extends TestBaseRapor {
 
         //user email : customer@bluerentalcars.com
         brcPage.emailTextBox.sendKeys(ConfigReader.getProperty("brcValidEmail"));
-        extentTest.info("Gecerli email yazildi"); /* *** */
+        extentTest.info("Gecerli email yazildi"); /* ***
 
         //password : 12345
         brcPage.passwordTextBox.sendKeys(ConfigReader.getProperty("brcValidPassword"));

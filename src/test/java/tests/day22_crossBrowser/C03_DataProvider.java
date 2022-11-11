@@ -10,6 +10,8 @@ import utilities.Driver;
 
 public class C03_DataProvider {
 
+    // BU CLASS DA AYNI ANDA BIRDEN FAZLA KELIMEYI NASIL ARATACAGIMIZI OGRENDIK
+
 
     @Test
     public void test01() {
@@ -44,7 +46,6 @@ public class C03_DataProvider {
     @Test (dataProvider = "AranacakKelimeler") // once bunu olusturduk altini cizdi ustteki kısmı olusturduk
                                     /* arayacagimiz kelimeleri bir liste gibi tutup
                                      bana yollayacak bir veri saglayicisi olusturacagiz*/
-
     public void dataProviderTesti(String arananKelime) {
 
         //amazon anasayfaya gidelim
@@ -54,7 +55,7 @@ public class C03_DataProvider {
         AmazonPage amazonPage = new AmazonPage();
         amazonPage.aramaKutusu.sendKeys(arananKelime+ Keys.ENTER);
 
-        // Sonuclarin aradigimiz kelime icerdigini test ederlim
+        // Sonuclarin aradigimiz kelime icerdigini test edelim
         String expectedKelime = arananKelime;
         String actualKelime = amazonPage.aramaSonucuElementi.getText();
         Assert.assertTrue(actualKelime.contains(expectedKelime));
